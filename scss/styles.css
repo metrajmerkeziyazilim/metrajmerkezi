@@ -1,0 +1,222 @@
+/** GOOGLE FONTS
+font-family:"Changa", sans-serif;
+font-family: "Open Sans", sans-serif;
+**/
+@import url("https://fonts.googleapis.com/css2?family=Changa:wght@500&family=Open+Sans:wght@300&display=swap");
+/**-------FONT SETTINGS--------**/
+/** FONT VARIABLES DEFINITON **/
+/** FONT COLOR VARIABLES DEFINITION **/
+/**-------UTILITIES--------**/
+.bg-dark {
+  background-color: #1a1414;
+}
+.bg-light {
+  background-color: #fefefe;
+}
+
+.ml-2 {
+  margin-left: 2rem;
+}
+
+/**-------MIXINS--------**/
+.btn {
+  background-color: #fefefe;
+  color: #e51515;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  border: 2px solid #e51515;
+  outline: none;
+  letter-spacing: 2px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.btn:hover {
+  background-color: #e51515;
+  color: #fefefe;
+}
+.btn-primary {
+  background-color: #e51515;
+  color: #fefefe;
+}
+.btn-primary:hover {
+  background-color: #fefefe;
+  color: #e51515;
+}
+
+/**------- GENERAL SETTINGS---------**/
+/** RESET CSS**/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #9f9f9f;
+  background-color: #fefefe;
+}
+
+.container {
+  max-width: 114rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  text-transform: none;
+  font-family: "Changa", sans-serif;
+  color: #fefefe;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+/** TOP HEADER**/
+.top-header {
+  border-bottom: 1px solid #e51515;
+}
+.top-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top-header .container .logo h1 {
+  font-size: 5rem;
+  font-family: "Changa", sans-serif;
+  color: #e51515;
+}
+.top-header .container .top-social-menu {
+  display: flex;
+}
+.top-header .container .top-social-menu li {
+  margin: 0 1rem;
+  padding: 1rem;
+}
+.top-header .container .top-social-menu li a {
+  font-size: 2rem;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.top-header .container .top-social-menu li:hover a {
+  color: #e51515;
+}
+.top-header .container .login-area span {
+  display: none;
+}
+
+/** NAV HEADER**/
+.nav-header {
+  border-bottom: 1px solid #e51515;
+}
+.nav-header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-header .navbar .navbar-list {
+  display: flex;
+}
+.nav-header .navbar .navbar-list li {
+  line-height: 8rem;
+  position: relative;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.nav-header .navbar .navbar-list li .dropdown {
+  position: absolute;
+  background-color: black;
+  width: 150%;
+  left: 50%;
+  z-index: 10;
+  top: 12rem;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+.nav-header .navbar .navbar-list li .dropdown li {
+  line-height: 4rem;
+}
+.nav-header .navbar .navbar-list li:hover {
+  background-color: #e51515;
+}
+.nav-header .navbar .navbar-list li:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+  top: 8rem;
+}
+.nav-header .navbar .navbar-list a {
+  padding: 0 2rem;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+}
+.nav-header .navbar .navbar-list i {
+  color: #fefefe;
+  font-size: 1.6rem;
+  margin-right: 1rem;
+}
+.nav-header .navbar .search-area input[type=search],
+.nav-header .navbar .search-area button[type=submit] {
+  border: none;
+  background-color: transparent;
+  color: #fefefe;
+}
+.nav-header .navbar .search-area input[type=search] {
+  border-bottom: 1px solid #e51515;
+  padding: 0.5rem;
+}
+.nav-header .navbar .search-area button[type=submit] {
+  margin-left: -5rem;
+}
+
+/** MAIN SLIDER**/
+.main-slider .single-slide {
+  position: relative;
+}
+.main-slider .single-slide .slide-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.9) 100%);
+}
+.main-slider .single-slide .slide-overlay .slide-content {
+  position: absolute;
+  top: 45%;
+  width: 80%;
+  border-top: 2px solid #e51515;
+  border-bottom: 2px solid #e51515;
+  padding: 10rem 7rem;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
+}/*# sourceMappingURL=styles.css.map */
